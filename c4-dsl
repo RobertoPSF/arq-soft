@@ -1,0 +1,49 @@
+workspace {
+
+  model {
+    user = person "Usuário"
+    dev = person "Engenheiro de Build"
+
+    jenkins = softwareSystem "Jenkins" {
+      description "Sistema de automação de builds"
+    }
+
+    fontsSystem = softwareSystem "Fonts" {
+      description "Recebe e armazena informações de uso de fontes"
+
+      fontsAPI = container "Fonts API" "gRPC + Golang" "Expõe endpoint para gravação, consulta e exclusão de dados de fontes"
+      fontsDB = container "Banco de Dados" "PostgreSQL" "Armazena os dados de uso das fontes de cada build"
+    }
+
+    databricks = softwareSystem "Databricks" {
+      description "Job que consome a rota de consulta"
+    }
+
+    googleSheets = softwareSystem "Google Planilhas" {
+      description "Visualização final dos dados"
+    }
+
+    // Relacionamentos
+    user -> googleSheets "Consulta a planilha com a quantidade de uso das fontes"
+    dev -> jenkins "Dispara builds"
+    jenkins -> fontsAPI "Executa script e envia contagem de fontes"
+    databricks -> fontsAPI "Recebe planilha gerada pela API"
+    fontsAPI -> fontsDB "Armazena, consulta e exclui dados"
+    databricks -> googleSheets "Salva a planilha para ser visualizada"
+  }
+
+  views {
+
+      systemLandscape "ContextoGeral" {
+        include *
+        autolayout lr
+      }
+    
+      container fontsSystem {
+        include *
+        autolayout lr
+      }
+    
+      theme default
+    }
+}
