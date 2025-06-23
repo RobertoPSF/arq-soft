@@ -7,9 +7,10 @@
 Este documento foi produzido por **Roberto Pereira dos Santos Filho**
 
 **Matrícula:** 121210587
+
 **Contato:** roberto.santos.filho@ccc.ufcg.edu.br
+
 **Projeto documentado:** repositório privado 
-**Sistema:** Controle de Uso de Fontes em Builds
 
 ---
 
