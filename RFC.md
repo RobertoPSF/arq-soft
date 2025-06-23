@@ -42,7 +42,7 @@ O sistema é composto por uma cadeia de componentes que atuam desde o processo d
 
 ### Diagrama de Contexto
 
-![Diagrama C4 - System Landscape](bPJFRjD04CRl-nH3n26LAd7f4Qf24WfL1L4Zu5XDx8apodhMtPsDIjy6SU09U8AyM7UTVuRIfbpisP7t-tc-R-speEWrrjO4KWZKe4Tr7iG96MMr19FlGQc6IvGo5DYGCPPc2kh0SpLNADbJeUp4c1SiXOqbmUl1oQl1oUdVZUk14wLRFJLcJ3uuwNy9SVN3ipk6thRi7SFBaaBXt_HogL.png)
+![Diagrama C4 - System Landscape](bPJFRjD04CRl-nH3n26LAd7f4Qf24WfL1L4Zu5XDx8apodhMtPsDIjy6SU09U8AyM7UTVuRIfbpisP7t-tc-R-speEWrrjO4KWZKe4Tr7iG96MMr19FlGQc6IvGo5DYGCPPc2kh0SpLNADbJeUp4c1SiXOqbmUl1oQl1oUdVZUk14wLRFJLcJ3uuwNy9SVN3ipk6thRi7SFBaaBXt_HogLY5TMLP5gawskuTIKKo9_Qkf7UH.png)
 
 ### Descrição
 
@@ -66,7 +66,7 @@ Esses containers se comunicam diretamente com Jenkins e Databricks.
 
 ### Diagrama de Containers
 
-![Diagrama C4 - Containers](XPJ1RXCn48RlVefXnI4H0Iuzagfj4WgeWf0SE4QJzNHZnMklx76LWdWQ3Zm1Jv0NmtOsP4aQkEpEUCV__Fx6sYlFw3ZKMdXYyDIWGxOEZ3KaMB4cU6iDUtW9e_X6PSXv8JJTCx05fweLWrIEIbRM2F5CcL87IV1cTF5wT75vlB18AhJXfpza-KiXve-UgUvz8BDMnW-WQADY0Cyb-T8DYx.png)
+![Diagrama C4 - Containers](XPJ1RXCn48RlVefXnI4H0Iuzagfj4WgeWf0SE4QJzNHZnMklx76LWdWQ3Zm1Jv0NmtOsP4aQkEpEUCV__Fx6sYlFw3ZKMdXYyDIWGxOEZ3KaMB4cU6iDUtW9e_X6PSXv8JJTCx05fweLWrIEIbRM2F5CcL87IV1cTF5wT75vlB18AhJXfpza-KiXve-UgUvz8BDMnW-WQADY0Cyb-T8DYxbA9GXH00FR6hS_jpziIfT1QPbB.png)
 
 ### Tecnologias e detalhes
 
@@ -87,7 +87,7 @@ A `Fonts API` contém os seguintes componentes principais:
 
 - **IngestService**: responsável por receber as contagens e persistir.
 - **QueryService**: provê rotas para resgatar planilhas com os dados sobre as fontes, diferenciando apenas por periodo de tempo.
-- **CleanupService**: permite exclusão segura de registros.
+- **CleanupService**: permite exclusão segura de todos os registros.
 - **AuthMiddleware**: aplica autenticação por token.
 
 ---
