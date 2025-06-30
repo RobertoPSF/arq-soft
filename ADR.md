@@ -6,7 +6,7 @@ Decisão tomada e implementada.
 
 ## Data
 
-2025-06-16
+2024-06-30
 
 ## Contexto
 
